@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: hsl(170, 100%, 26%);
+    --headline: hsl(210,11%,15%);
+    --paragraph: hsl(210,9%,31%);
+    --paragraph-card: hsl(170,100%,26%);
+    --primary-color-brand: hsl(39,100%,97%);
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'DM Sans';
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+header{
+    width: 37.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 4.1rem;      
+}
+
+h1{
+    font-size: 3.4rem;
+    color: var(--headline);
+    line-height: 130%;
+    margin-bottom: 2.4rem;
+}
+
+h4{
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-bottom: 4.1rem;
+}
+
+p{
+    font-size: 1.8rem;
+    color: var(--paragraph);
+    line-height: 150%;
+    font-weight: 400;
+    margin-bottom: 3.2rem;
+}
+
+button{
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 4rem;
+    margin-bottom: 6rem;
+    width: 26.3rem;
+    height: 6.2rem;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-box{
+    width: 32.7rem;
+    height: 47rem;
+    background-color: var(--primary-color-brand);
+    border-radius: 0.6rem;
+    border: 1px solid #DCE9E2;
+    position: relative;
+    top:-2.5rem;
+    left:2.2rem;
+    
+}
+
+.m-box h3{
+    height: 6.2rem;
+    font-size: 4.8rem;
+    font-weight:bold;
+    line-height: 130%;
+}
+
+.m-box p{
+    color: var(--paragraph-card);
+    height: 2.4rem;
+    line-height: 150%;
+}
