@@ -8,7 +8,8 @@
 
 
 ## Sobre
-- Esse projeto foi construido a partir do evento [NLW](https://nextlevelweek.com/) (Next Level Week) no decorrer de uma semana de forma gratuita. 
+- Esse projeto foi construido a partir do evento [NLW](https://nextlevelweek.com/) (Next Level Week), através da empresa [Rocketseat](https://rocketseat.com.br
+) no decorrer de uma semana (02/05/2022 a 08/05/2022). 
 
 
 ## Projetos
