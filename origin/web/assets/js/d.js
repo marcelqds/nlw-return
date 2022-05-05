@@ -1,8 +1,13 @@
-window.onload = () => {
+    
     //#NextLevel
     //#NeverStopLearning
-    console.log("página carregada...!");
-    setInterval(()=>{
-       //document.location.reload();
-    },2000);
-}
+    //#NewSkills
+    
+    function onScroll(){
+        scrollY > 0 ? navigation.classList.add('scroll') : navigation.classList.remove('scroll');
+        //document.getElementById('navigation').
+    }
+
+//    setInterval(()=>{
+//       document.location.reload();
+//    },2000);

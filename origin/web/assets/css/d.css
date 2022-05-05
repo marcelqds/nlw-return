@@ -9,7 +9,15 @@
     --paragraph: hsl(210,9%,31%);
     --paragraph-card: hsl(170,100%,26%);
     --primary-color-brand: hsl(39,100%,97%);
+    --brand-light: hsl(148, 23%, 89%);
+    --nav-height: 7.2rem;
     font-size: 62.5%;
+}
+
+.wrapper{
+    width: 37.5rem;
+    margin-inline: auto;
+    padding-inline: 2.4rem;
 }
 
 body{
@@ -18,27 +26,39 @@ body{
     text-align: center;
 }
 
-header{
-    width: 37.5rem;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 4.1rem;      
+/*============== HEADER ==============*/
+
+header::before{
+    content:"";
+    width: 100vw;
+    height: calc(108rem + var(--nav-height));
+    background-color: var(--brand-light);
+    display:block;
+
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: -1;
 }
 
-h1{
+header{
+    margin-top: calc(4.1rem + var(--nav-height));
+}
+
+header h1{
     font-size: 3.4rem;
     color: var(--headline);
     line-height: 130%;
     margin-bottom: 2.4rem;
+    margin-top: 1.6rem;
 }
 
-h4{
+header h4{
     font-size: 1.4rem;
     color: var(--primary-color);
-    margin-bottom: 4.1rem;
 }
 
-p{
+header p{
     font-size: 1.8rem;
     color: var(--paragraph);
     line-height: 150%;
@@ -46,7 +66,7 @@ p{
     margin-bottom: 3.2rem;
 }
 
-button{
+header button{
     background-color: var(--primary-color);
     border: none;
     border-radius: 4rem;
@@ -62,20 +82,28 @@ button{
     justify-content: center;
     gap: 1.6rem;
 
-    margin-right: auto;
-    margin-left: auto;
+    margin-inline: auto;
+}
+
+header #nlw-foto{ 
+    width: 26.4rem;
+    margin-inline: auto;
+    display:block;
+    object-position: 0 2rem;    
 }
 
 .container-box{
+    padding-top: 4rem;
     width: 32.7rem;
-    height: 47rem;
     background-color: var(--primary-color-brand);
     border-radius: 0.6rem;
     border: 1px solid #DCE9E2;
-    position: relative;
-    top:-2.5rem;
-    left:2.2rem;
-    
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6rem;
 }
 
 .m-box h3{
@@ -89,4 +117,35 @@ button{
     color: var(--paragraph-card);
     height: 2.4rem;
     line-height: 150%;
+}
+
+/* ============= NAVIGATION =============*/
+
+nav{
+    display:flex;
+    height: var(--nav-height);
+    position: fixed;
+    top:0;
+    left:50%;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+
+nav .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav.scroll{
+    background-color: var(--primary-color);
+    width: 100vw;
+}
+
+nav.scroll svg:nth-child(1) path{
+    fill: white;
+}
+
+nav.scroll svg:nth-child(2) path{
+    stroke:white;
 }
