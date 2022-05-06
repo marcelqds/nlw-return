@@ -3,7 +3,7 @@ import { FeedbackType, feedbackTypes } from '..';
 import { CloseButton } from '../CloseButton';
 import { ScreenshotButton } from '../ScreenshotButton';
 import { Loading } from '../Loading';
-import { FeedbackTypeStep } from 'FeedbackTypeStep';
+import { FeedbackTypeStep } from './FeedbackTypeStep';
 import { ArrowLeft } from 'phosphor-react';
 import { api } from '../../../libs/api';
 
@@ -75,7 +75,7 @@ export function FeedbackContentStep(
                     onScreenshotTook={setScreenshot}
                  />
                 <button
-                    disabled={comment.length == 0 | isSendingFeedback}
+                    disabled={comment.length == 0 || isSendingFeedback}
                     type="submit"
                     className="p-2 bg-brand-500 rounded-md border-transparent flex-1 flex justify-center items-center text-sm hover:bg-brand-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 transition-colors disabled:opacity-50 disabled:hover:bg-brand-500"
                 >
