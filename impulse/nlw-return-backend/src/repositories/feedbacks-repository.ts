@@ -5,5 +5,5 @@ export interface IFeedbackCreateData{
 }
 
 export interface IFeedbacksRepository{
-    create: (data: FeedbackCreateData) => Promise<void>;
+    create: (data: IFeedbackCreateData) => Promise<void>;
 }

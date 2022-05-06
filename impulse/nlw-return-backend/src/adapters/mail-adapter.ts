@@ -4,6 +4,6 @@ export interface ISendMailData{
 }
 
 export interface IMailAdapter{
-    sendMail(data : ISendMailData) => Promise<void>;
+    sendMail : (data : ISendMailData) => Promise<void>;
 }
 

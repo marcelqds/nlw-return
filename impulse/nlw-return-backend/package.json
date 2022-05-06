@@ -2,10 +2,12 @@
   "name": "impulse",
   "version": "1.0.0",
   "description": "",
-  "main": "src/app.js",
+  "main": "dist/app.js",
   "scripts": {
-    "dev": "ts-node-dev src/app.ts",
-    "test": "jest"
+    "build" : "npx tsc",
+    "start" : "node dist/app.js",
+    "dev"   : "ts-node-dev src/app.ts",        
+    "test"  : "jest"
   },
   "keywords": [],
   "author": "",
