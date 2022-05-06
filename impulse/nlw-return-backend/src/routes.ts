@@ -13,7 +13,6 @@ routes.post('/feedbacks', async (req, res) => {
         new PrismaFeedbacksRepository(), 
         new NodemailerMailAdapter()
     );
-
     const feedback = await submitFeedbackService.execute(
         {
             type, 
@@ -21,7 +20,6 @@ routes.post('/feedbacks', async (req, res) => {
             screenshot
         }
     );
-    
     return res.status(201).send();
 });
 

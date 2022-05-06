@@ -31,7 +31,6 @@ export class SubmitFeedbackService {
             screenshot
         });
 
-        
         await this.mailAdapter.sendMail({
             subject: 'Novo feedback',
             body: [
@@ -42,5 +41,7 @@ export class SubmitFeedbackService {
             ].join('\n'),
 
         });
+
+        console.log('Email enviado com sucesso');
     }
 }

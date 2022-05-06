@@ -2,6 +2,7 @@ import cors from 'cors';
 import express  from 'express';
 import { routes } from './routes';
 
+console.log(process.env.EMAIL_HOST);
 
 const app = express();
 
