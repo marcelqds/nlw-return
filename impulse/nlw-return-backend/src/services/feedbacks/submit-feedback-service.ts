@@ -1,5 +1,5 @@
-import { IFeedbacksRepository } from '../repositories/feedbacks-repository';
-import { IMailAdapter } from '../adapters/mail-adapter';
+import { IFeedbacksRepository } from '../../repositories/feedbacks-repository';
+import { IMailAdapter } from '../../adapters/mail-adapter';
 
 interface SubmitFeedbackServiceData{
     type: string;

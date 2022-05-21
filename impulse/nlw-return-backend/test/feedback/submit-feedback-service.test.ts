@@ -1,4 +1,4 @@
-import { SubmitFeedbackService } from './submit-feedback-service';
+import { SubmitFeedbackService } from '../../src/services/submit-feedback-service';
 
 const createFeedbackSpy = jest.fn();
 const sendMailSpy = jest.fn();
@@ -46,3 +46,6 @@ describe('Submit feedback', () => {
         })).rejects.toThrow();
     });
 });
+
+
+
